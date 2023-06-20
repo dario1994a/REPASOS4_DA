@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+          
+             x:Class="REPASOS4_DA.Page1" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Label Text="VENTANA 1" HorizontalTextAlignment="Center" FontSize="22"></Label>
+
+            <Image Source="https://img.freepik.com/iconos-gratis/logo-android_318-54234.jpg"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    
+                    
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Usuario" FontSize="20" Grid.Row="0" Grid.Column="0"></Label>
+                <Label Text="Contraseña" FontSize="20" Grid.Row="1" Grid.Column="0"></Label>
+                <Button x:Name="btnInicia" Text="INICIAR SESION" Clicked="btnInicia_Clicked" Grid.Row="2" Grid.Column="1"></Button>
+
+                <Entry x:Name="txtUsuario" Placeholder="Ingrese Usuario" Grid.Row="0" Grid.Column="1"></Entry>
+                <Entry x:Name="txtContraseña" Placeholder="Ingrese Contraseña" Grid.Row="1" Grid.Column="1" IsPassword="True"></Entry>
+                <Button x:Name="btnCancelar" Text="CANCELA" Clicked="btnCancelar_Clicked" Grid.Row="2" Grid.Column="2"></Button>
+            </Grid>
+            
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
